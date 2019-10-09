@@ -94,8 +94,6 @@ class  Index extends BaseMall {
         $info['benefitList']  = StoreProduct::getBenefitProduct('id,image,store_name,cate_id,price,ot_price,stock,unit_name', 5);
 
 
-
-
         $this->assign('index_sign', 'index');
         $this->assign('navs', $navs);
         $this->assign('cart_goods_num', $cart_goods_num);
