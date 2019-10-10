@@ -1,0 +1,4 @@
+<?php
+//000000000000
+ exit();?>
+a:5:{s:3:"uid";a:7:{s:4:"name";s:3:"uid";s:4:"type";s:16:"int(10) unsigned";s:7:"notnull";b:0;s:7:"default";N;s:7:"primary";b:0;s:7:"autoinc";b:0;s:7:"comment";s:9:"用户 id";}s:5:"token";a:7:{s:4:"name";s:5:"token";s:4:"type";s:12:"varchar(300)";s:7:"notnull";b:0;s:7:"default";N;s:7:"primary";b:0;s:7:"autoinc";b:0;s:7:"comment";s:5:"token";}s:11:"create_time";a:7:{s:4:"name";s:11:"create_time";s:4:"type";s:8:"datetime";s:7:"notnull";b:0;s:7:"default";N;s:7:"primary";b:0;s:7:"autoinc";b:0;s:7:"comment";s:12:"创建时间";}s:12:"expires_time";a:7:{s:4:"name";s:12:"expires_time";s:4:"type";s:8:"datetime";s:7:"notnull";b:0;s:7:"default";N;s:7:"primary";b:0;s:7:"autoinc";b:0;s:7:"comment";s:12:"到期事件";}s:8:"login_ip";a:7:{s:4:"name";s:8:"login_ip";s:4:"type";s:11:"varchar(32)";s:7:"notnull";b:0;s:7:"default";N;s:7:"primary";b:0;s:7:"autoinc";b:0;s:7:"comment";s:8:"登录ip";}}

@@ -1,0 +1,4 @@
+<?php
+//000000000000
+ exit();?>
+a:5:{s:2:"id";a:7:{s:4:"name";s:2:"id";s:4:"type";s:22:"mediumint(11) unsigned";s:7:"notnull";b:0;s:7:"default";N;s:7:"primary";b:1;s:7:"autoinc";b:1;s:7:"comment";s:14:"快递公司id";}s:4:"code";a:7:{s:4:"name";s:4:"code";s:4:"type";s:11:"varchar(50)";s:7:"notnull";b:0;s:7:"default";N;s:7:"primary";b:0;s:7:"autoinc";b:0;s:7:"comment";s:18:"快递公司简称";}s:4:"name";a:7:{s:4:"name";s:4:"name";s:4:"type";s:11:"varchar(50)";s:7:"notnull";b:0;s:7:"default";N;s:7:"primary";b:0;s:7:"autoinc";b:0;s:7:"comment";s:18:"快递公司全称";}s:4:"sort";a:7:{s:4:"name";s:4:"sort";s:4:"type";s:7:"int(11)";s:7:"notnull";b:0;s:7:"default";N;s:7:"primary";b:0;s:7:"autoinc";b:0;s:7:"comment";s:6:"排序";}s:7:"is_show";a:7:{s:4:"name";s:7:"is_show";s:4:"type";s:10:"tinyint(1)";s:7:"notnull";b:0;s:7:"default";N;s:7:"primary";b:0;s:7:"autoinc";b:0;s:7:"comment";s:12:"是否显示";}}

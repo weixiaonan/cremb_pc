@@ -1,0 +1,4 @@
+<?php
+//000000000000
+ exit();?>
+a:5:{s:3:"uid";a:7:{s:4:"name";s:3:"uid";s:4:"type";s:16:"int(10) unsigned";s:7:"notnull";b:0;s:7:"default";N;s:7:"primary";b:1;s:7:"autoinc";b:0;s:7:"comment";s:8:"用户ID";}s:10:"product_id";a:7:{s:4:"name";s:10:"product_id";s:4:"type";s:16:"int(10) unsigned";s:7:"notnull";b:0;s:7:"default";N;s:7:"primary";b:1;s:7:"autoinc";b:0;s:7:"comment";s:8:"商品ID";}s:4:"type";a:7:{s:4:"name";s:4:"type";s:4:"type";s:11:"varchar(32)";s:7:"notnull";b:0;s:7:"default";N;s:7:"primary";b:1;s:7:"autoinc";b:0;s:7:"comment";s:40:"类型(收藏(collect）、点赞(like))";}s:8:"category";a:7:{s:4:"name";s:8:"category";s:4:"type";s:11:"varchar(32)";s:7:"notnull";b:0;s:7:"default";N;s:7:"primary";b:1;s:7:"autoinc";b:0;s:7:"comment";s:50:"某种类型的商品(普通商品、秒杀商品)";}s:8:"add_time";a:7:{s:4:"name";s:8:"add_time";s:4:"type";s:16:"int(10) unsigned";s:7:"notnull";b:0;s:7:"default";N;s:7:"primary";b:0;s:7:"autoinc";b:0;s:7:"comment";s:12:"添加时间";}}

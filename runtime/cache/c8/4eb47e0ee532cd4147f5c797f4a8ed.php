@@ -1,0 +1,4 @@
+<?php
+//000000000000
+ exit();?>
+a:5:{s:2:"id";a:7:{s:4:"name";s:2:"id";s:4:"type";s:7:"int(11)";s:7:"notnull";b:0;s:7:"default";N;s:7:"primary";b:1;s:7:"autoinc";b:1;s:7:"comment";s:14:"组合数据ID";}s:4:"name";a:7:{s:4:"name";s:4:"name";s:4:"type";s:11:"varchar(50)";s:7:"notnull";b:0;s:7:"default";N;s:7:"primary";b:0;s:7:"autoinc";b:0;s:7:"comment";s:15:"数据组名称";}s:4:"info";a:7:{s:4:"name";s:4:"info";s:4:"type";s:12:"varchar(256)";s:7:"notnull";b:0;s:7:"default";N;s:7:"primary";b:0;s:7:"autoinc";b:0;s:7:"comment";s:12:"数据提示";}s:11:"config_name";a:7:{s:4:"name";s:11:"config_name";s:4:"type";s:11:"varchar(50)";s:7:"notnull";b:0;s:7:"default";N;s:7:"primary";b:0;s:7:"autoinc";b:0;s:7:"comment";s:12:"数据字段";}s:6:"fields";a:7:{s:4:"name";s:6:"fields";s:4:"type";s:4:"text";s:7:"notnull";b:0;s:7:"default";N;s:7:"primary";b:0;s:7:"autoinc";b:0;s:7:"comment";s:43:"数据组字段以及类型（json数据）";}}

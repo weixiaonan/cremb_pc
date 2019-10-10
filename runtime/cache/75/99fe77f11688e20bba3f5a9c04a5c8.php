@@ -1,0 +1,4 @@
+<?php
+//000000000000
+ exit();?>
+a:4:{s:2:"id";a:7:{s:4:"name";s:2:"id";s:4:"type";s:7:"int(11)";s:7:"notnull";b:0;s:7:"default";N;s:7:"primary";b:1;s:7:"autoinc";b:1;s:7:"comment";s:0:"";}s:10:"product_id";a:7:{s:4:"name";s:10:"product_id";s:4:"type";s:7:"int(11)";s:7:"notnull";b:0;s:7:"default";s:1:"0";s:7:"primary";b:0;s:7:"autoinc";b:0;s:7:"comment";s:8:"产品id";}s:7:"cate_id";a:7:{s:4:"name";s:7:"cate_id";s:4:"type";s:7:"int(11)";s:7:"notnull";b:0;s:7:"default";s:1:"0";s:7:"primary";b:0;s:7:"autoinc";b:0;s:7:"comment";s:8:"分类id";}s:8:"add_time";a:7:{s:4:"name";s:8:"add_time";s:4:"type";s:7:"int(11)";s:7:"notnull";b:0;s:7:"default";s:1:"0";s:7:"primary";b:0;s:7:"autoinc";b:0;s:7:"comment";s:12:"添加时间";}}
