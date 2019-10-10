@@ -23,24 +23,6 @@ class  Index extends BaseMall {
     }
 
     public function index() {
-        $navs = ['header' => []];//快捷导航
-        $cart_goods_num  = 0;
-
-        //热门搜索关键字获取
-        $routineHotSearch = GroupDataService::getData('routine_hot_search') ?? [];
-        $searchKeyword = [];
-        if(count($routineHotSearch)){
-            foreach ($routineHotSearch as $key=>&$item){
-                array_push($searchKeyword, $item['title']);
-            }
-        }
-        //TODO 首页顶部菜单
-        $menus = GroupDataService::getData('pc_top_menu') ?: [];
-        $navs['middle'] = $menus;
-
-        $navs['footer'] = [
-            ['nav_url' => '', 'nav_new_open' => 0, 'nav_title' => '底部']
-        ];
 
         $banner = GroupDataService::getData('pc_home_banner') ?: [];//TODO 首页banner图
 
@@ -95,9 +77,8 @@ class  Index extends BaseMall {
 
 
         $this->assign('index_sign', 'index');
-        $this->assign('navs', $navs);
-        $this->assign('cart_goods_num', $cart_goods_num);
-        $this->assign('hot_search', $searchKeyword);
+
+
         $this->assign('banner', $banner);
         $this->assign('index_articles', $index_articles);
         $this->assign('fastList', $fastList);

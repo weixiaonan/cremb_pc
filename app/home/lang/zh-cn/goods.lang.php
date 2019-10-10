@@ -13,8 +13,8 @@ $lang['ds_collection_popularity'] = '收藏人气';
 $lang['goods_index_no_goods']			= '商品已下架或不存在';
 $lang['goods_index_goods_click']			= '商品浏览';
 $lang['goods_index_freight']			= '运&#12288;&#12288;费';
-$lang['goods_index_goods_price']		= '商&nbsp;城&nbsp;价';
-$lang['goods_index_goods_cost_price']	= '市&nbsp;场&nbsp;价';
+$lang['goods_index_goods_price']		= '商城价';
+$lang['goods_index_goods_cost_price']	= '市场价';
 $lang['goods_index_trans_zcountry']		= '至&#12288;全国';
 $lang['goods_index_trans_country']		= '全国';
 $lang['goods_index_trans_for_platform']	= '平台承担运费';
@@ -215,6 +215,6 @@ $lang['consulting_net_friend']			= '咨询网友';
 $lang['view_all_inquiries']			= '查看全部咨询';
 
 
-
+return $lang;
 
 ?>

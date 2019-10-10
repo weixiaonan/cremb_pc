@@ -69,7 +69,7 @@ $lang['no_record'] = '暂无符合条件的数据记录';
 $lang['no_login'] = '您还没有登录';
 $lang['ds_please_choose'] = '请选择...';
 
-$lang['currency'] = '&yen;';
+$lang['currency'] = '¥';
 $lang['currency_zh'] = '元';
 $lang['ten_thousand'] = '万';
 $lang['piece'] = '件';

@@ -30,6 +30,7 @@ return [
     'extend_list'     => [
             'zh-cn'    => [
                 app()->getAppPath() . '\lang\zh-cn\index.lang.php',
+                app()->getAppPath() . '\lang\zh-cn\goods.lang.php'
             ],
         ],
     // Accept-Language转义为对应语言包名称
