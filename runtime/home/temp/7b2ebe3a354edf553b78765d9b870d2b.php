@@ -1,4 +1,4 @@
-<?php /*a:6:{s:57:"F:\wyb\shopwm\app\home\view\default\mall\index\index.html";i:1570604006;s:55:"F:\wyb\shopwm\app\home\view\default\base\base_home.html";i:1570523401;s:54:"F:\wyb\shopwm\app\home\view\default\base\mall_top.html";i:1570601897;s:57:"F:\wyb\shopwm\app\home\view\default\base\mall_header.html";i:1570601232;s:57:"F:\wyb\shopwm\app\home\view\default\base\mall_server.html";i:1570523106;s:57:"F:\wyb\shopwm\app\home\view\default\base\mall_footer.html";i:1570602267;}*/ ?>
+<?php /*a:6:{s:57:"F:\wyb\shopwm\app\home\view\default\mall\index\index.html";i:1570625272;s:55:"F:\wyb\shopwm\app\home\view\default\base\base_home.html";i:1570625272;s:54:"F:\wyb\shopwm\app\home\view\default\base\mall_top.html";i:1570625272;s:57:"F:\wyb\shopwm\app\home\view\default\base\mall_header.html";i:1570625272;s:57:"F:\wyb\shopwm\app\home\view\default\base\mall_server.html";i:1570625272;s:57:"F:\wyb\shopwm\app\home\view\default\base\mall_footer.html";i:1570625272;}*/ ?>
 <!doctype html>
 <html>
     <head>
@@ -689,7 +689,7 @@
 
     <?php switch($k): case "0": $var3=3; break; case "1": $var3=5; break; case "2": $var3=6; break; case "3": $var3=7; break; case "4": $var3=4; break; ?>
     <?php endswitch; if($k<5): ?>
-  
+
     <?php endif; ?>
 
 </div>
@@ -853,7 +853,7 @@
         <a href="#"></a>
     </div>
     <div class="mall_desc">
-        <?php if(!(empty($article_list) || (($article_list instanceof \think\Collection || $article_list instanceof \think\Paginator ) && $article_list->isEmpty()))): if(is_array($article_list) || $article_list instanceof \think\Collection || $article_list instanceof \think\Paginator): $_5d9d83e80ab17 = is_array($article_list) ? array_slice($article_list,0,4, true) : $article_list->slice(0,4, true); if( count($_5d9d83e80ab17)==0 ) : echo "" ;else: foreach($_5d9d83e80ab17 as $key=>$art): ?>
+        <?php if(!(empty($article_list) || (($article_list instanceof \think\Collection || $article_list instanceof \think\Paginator ) && $article_list->isEmpty()))): if(is_array($article_list) || $article_list instanceof \think\Collection || $article_list instanceof \think\Paginator): $_5da16f2b7cf49 = is_array($article_list) ? array_slice($article_list,0,4, true) : $article_list->slice(0,4, true); if( count($_5da16f2b7cf49)==0 ) : echo "" ;else: foreach($_5da16f2b7cf49 as $key=>$art): ?>
         <dl> 
             <dt><?php echo htmlentities($art['ac_name']); ?></dt>
             <dd>

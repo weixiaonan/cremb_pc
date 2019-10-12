@@ -86,6 +86,15 @@ class  Goods extends BaseMall {
         } else $data['replyChance'] = 0;
         $data['mer_id'] = StoreProduct::where('id', $storeInfo['id'])->value('mer_id');
 
+        //热销
+        $field = ' id,store_name,price,sales,image ';
+        $model = StoreProduct::where('is_del', 0)->where('mer_id', 0)
+            ->where('stock', '>', 0)->where('is_show', 1)->field($field)
+            ->order('sales DESC, id DESC');
+        $model->limit(5);
+        $hot_sales =  StoreProduct::setLevelPrice($model->select(), $uid);
+
+
         $goods = [];
         $goods['goods_state'] = 1; //上架
         $goods['is_have_gift'] = [];
@@ -113,7 +122,7 @@ class  Goods extends BaseMall {
         $data['goods_evaluate_info']['normal'] = 5;//商品中评评价
         $data['goods_evaluate_info']['bad'] = 6;//商品差评价
 
-        $data['hot_sales'] = [];//热销
+        $data['hot_sales'] = $hot_sales;//热销
         $data['hot_collect'] = [];//热收集
         $data['spec_list'] = '[{"sign":"","url":"\/Home\/goods\/index\/goods_id\/5.html"}]';//
 

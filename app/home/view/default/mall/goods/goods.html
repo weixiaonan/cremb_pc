@@ -39,13 +39,7 @@
                 <!-- S 收藏 -->
                 <a href="javascript:collect_goods('{$storeInfo.id}','count','goods_collect');" class="favorite"><i class="iconfont">&#xe6a9;</i>{$Think.lang.goods_index_favorite_goods}</a>
                 <!-- S 对比 -->
-                <input type="hidden" id="lockcompare" value="unlock" />
-                <a href="javascript:void(0);" class="compare" ds_type="compare_{$storeInfo.id}" data-param='{"gid":"{$storeInfo.id}"}'><i class="iconfont">&#xe74a;</i>{$Think.lang.add_contrast}</a><!-- S 举报 -->
-                {if isset($inform_switch) and $inform_switch}
-                <a href="{if session('is_login')}{:url('Memberinform/inform_submit',['goods_id'=>$storeInfo.id])}{else/}javascript:login_dialog();{/if}" title="{$Think.lang.goods_index_goods_inform}" class="inform"><i></i>{$Think.lang.goods_index_goods_inform}</a>
-                {/if}
-                <a href="{:url('TaobaoExport/export_csv',['goods_id'=>$storeInfo.id])}"><i class='iconfont'>&#xe74e;</i>{$Think.lang.goods_index_export_data}</a>
-                <a href="{:url('TaobaoExport/export_image',['goods_id'=>$storeInfo.id])}"><i class='iconfont'>&#xe72a;</i>{$Think.lang.goods_index_export_image}</a>
+
                 <!-- End -->
             </div>
         </div>
@@ -498,15 +492,15 @@
                     {foreach name="hot_sales" item="val"}
                     <li>
                         <div class="p_img">
-                            <a href="{:url('Goods/index',['goods_id'=>$val.goods_id])}"><img src="{:goods_thumb($val, 240)}" width="85" height="85"></a>
+                            <a href="{:url('Goods/index',['goods_id'=>$val.id])}"><img src="{$val.image}" width="85" height="85"></a>
                         </div>
                         <div class="p_num {if $key < 3 }active{/if}">{php}echo $key+1;{/php}</div>
                         <div class="p_info">
                             <div class="p_name">
-                                <a href="{:url('Goods/index',['goods_id'=>$val.goods_id])}">{$val.goods_name}</a>
+                                <a href="{:url('Goods/index',['goods_id'=>$val.id])}">{$val.store_name}</a>
                             </div>
-                            <div class="p_price">{$Think.lang.currency}<em>{$val.goods_promotion_price}</em></div>
-                            <div class="p_sales">{$Think.lang.ds_sell_out}<strong>{$val.goods_salenum}</strong>{$Think.lang.ds_bi}</div>
+                            <div class="p_price">{$Think.lang.currency}<em>{$val.price}</em></div>
+                            <div class="p_sales">{$Think.lang.ds_sell_out}<strong>{$val.sales}</strong>{$Think.lang.ds_bi}</div>
                         </div>
                     </li>
                     {/foreach}
