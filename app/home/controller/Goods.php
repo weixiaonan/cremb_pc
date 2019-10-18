@@ -100,6 +100,7 @@ class  Goods extends BaseMall {
         $goods['is_have_gift'] = [];
 
         $goods['is_virtual'] = [];//商品规格值
+        $goods['goods_freight'] = 5;//商品规格值
         $goods['is_presell'] = [];//预售商品发货时间
         $goods['is_goodsfcode'] = [];//预售商品发货时间
         $goods['goods_storage'] = $data['storeInfo']['stock'];//购买数量及库存
@@ -110,6 +111,12 @@ class  Goods extends BaseMall {
         $goods['is_appoint'] = 0;//
         $goods['transport_id'] = 0;// 运费
         $goods['goods_body'] = $data['storeInfo']['description'];//销售记录总数
+
+        $goods['spec_name'] = array_column($data['productAttr'], 'attr_name');//
+        foreach ($goods['spec_name'] as $key=>$val) {
+            $goods['spec_value'][] = $data['productAttr'][$key]['attr_values'];
+        }
+
 
 
         $data['IsHaveBuy'] = 0;//限制购买
@@ -131,7 +138,9 @@ class  Goods extends BaseMall {
         return $this->fetch($this->template_dir . 'goods');
     }
 
-
+    public function json_area() {
+        echo input('param.callback') . '(' . json_encode(model('area')->getAreaArrayForJson()) . ')';
+    }
 
 
 }

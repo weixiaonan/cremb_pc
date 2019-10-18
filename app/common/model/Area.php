@@ -268,14 +268,14 @@ class  Area extends Model
             return $this->cachedData;
 
         // 缓存中有数据则返回
-        if ($data = rkcache('area')) {
+        if ($data = cache('area')) {
             $this->cachedData = $data;
             return $data;
         }
 
         // 查库
         $data = $this->_getAllArea();
-        wkcache('area', $data);
+        cache('area', $data);
         $this->cachedData = $data;
 
         return $data;

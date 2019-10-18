@@ -1,4 +1,4 @@
-<?php /*a:6:{s:57:"F:\wyb\shopwm\app\home\view\default\mall\index\index.html";i:1570625272;s:55:"F:\wyb\shopwm\app\home\view\default\base\base_home.html";i:1570625272;s:54:"F:\wyb\shopwm\app\home\view\default\base\mall_top.html";i:1570625272;s:57:"F:\wyb\shopwm\app\home\view\default\base\mall_header.html";i:1570625272;s:57:"F:\wyb\shopwm\app\home\view\default\base\mall_server.html";i:1570625272;s:57:"F:\wyb\shopwm\app\home\view\default\base\mall_footer.html";i:1570625272;}*/ ?>
+<?php /*a:6:{s:57:"F:\wyb\shopwm\app\home\view\default\mall\index\index.html";i:1570625272;s:55:"F:\wyb\shopwm\app\home\view\default\base\base_home.html";i:1570625272;s:54:"F:\wyb\shopwm\app\home\view\default\base\mall_top.html";i:1570625272;s:57:"F:\wyb\shopwm\app\home\view\default\base\mall_header.html";i:1570862920;s:57:"F:\wyb\shopwm\app\home\view\default\base\mall_server.html";i:1570625272;s:57:"F:\wyb\shopwm\app\home\view\default\base\mall_footer.html";i:1570625272;}*/ ?>
 <!doctype html>
 <html>
     <head>
@@ -386,6 +386,12 @@
 </div>
 <?php endif; ?>
 <!--面包屑导航 END-->
+
+<div class="dsh-breadcrumb-layout">
+    <div class="w1200" style="height: 20px;">
+
+    </div>
+</div>
 
 
 <script>
@@ -853,7 +859,7 @@
         <a href="#"></a>
     </div>
     <div class="mall_desc">
-        <?php if(!(empty($article_list) || (($article_list instanceof \think\Collection || $article_list instanceof \think\Paginator ) && $article_list->isEmpty()))): if(is_array($article_list) || $article_list instanceof \think\Collection || $article_list instanceof \think\Paginator): $_5da16f2b7cf49 = is_array($article_list) ? array_slice($article_list,0,4, true) : $article_list->slice(0,4, true); if( count($_5da16f2b7cf49)==0 ) : echo "" ;else: foreach($_5da16f2b7cf49 as $key=>$art): ?>
+        <?php if(!(empty($article_list) || (($article_list instanceof \think\Collection || $article_list instanceof \think\Paginator ) && $article_list->isEmpty()))): if(is_array($article_list) || $article_list instanceof \think\Collection || $article_list instanceof \think\Paginator): $_5da955dbd1228 = is_array($article_list) ? array_slice($article_list,0,4, true) : $article_list->slice(0,4, true); if( count($_5da955dbd1228)==0 ) : echo "" ;else: foreach($_5da955dbd1228 as $key=>$art): ?>
         <dl> 
             <dt><?php echo htmlentities($art['ac_name']); ?></dt>
             <dd>

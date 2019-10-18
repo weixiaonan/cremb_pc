@@ -215,14 +215,14 @@
 
         <!-- S 商品规格值-->
         {notempty name="$goods.spec_name"}
-        {foreach name="$goods.spec_name" item="val" key="key" }
+        {foreach name="$goods.spec_name" id="val" key="key" }
         <?php if (isset($goods['spec_value'][$key]) and is_array($goods['spec_value'][$key]) and !empty($goods['spec_value'][$key])) {?>
         <dl dstype="ds-spec">
           <dt>{$val}:</dt>
           <dd>
             <ul nctyle="ul_sign">
               <?php foreach($goods['spec_value'][$key] as $k => $v) {?>
-              {if  $key == 1 }
+              {if  $key == 10 }
               <!-- 图片类型规格-->
               <li class="sp-img"><a href="javascript:void(0);" class="<?php if (isset($goods['goods_spec'][$k])) {echo 'hovered';}?>" data-param="{valid:{$k}}" title="{$v}"><img src="<?php echo $spec_image[$k];?>"/>{$v}<i></i></a></li>
               {else /}
@@ -274,6 +274,8 @@
         </dl>
         {/if}
       </div>
+
+            <video src="http://player.youku.com/embed/XNDQwMjg4OTExNg==" controls=""></video>
       <!-- S 购买数量及库存 -->
       <div class="dss-buy">
         <?php if ($goods['goods_state'] != 0 && $goods['goods_storage'] >= 0) {?>
